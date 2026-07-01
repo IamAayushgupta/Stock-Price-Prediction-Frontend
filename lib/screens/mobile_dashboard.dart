@@ -201,13 +201,16 @@ class MobileDashboard extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: Image.asset(
-                'assets/images/logo.png',
-                width: 50,
-                height: 50,
-                fit: BoxFit.contain,
+            Hero(
+              tag: 'app_logo',
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Image.asset(
+                  'assets/images/logo.png',
+                  width: 50,
+                  height: 50,
+                  fit: BoxFit.contain,
+                ),
               ),
             ),
             const SizedBox(width: 10),

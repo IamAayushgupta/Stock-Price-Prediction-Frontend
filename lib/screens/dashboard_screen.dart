@@ -114,13 +114,16 @@ class DashboardScreen extends StatelessWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(6.r),
-                child: Image.asset(
-                  'assets/images/logo.png',
-                  width: 48.r,
-                  height: 48.r,
-                  fit: BoxFit.contain,
+              Hero(
+                tag: 'app_logo',
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(6.r),
+                  child: Image.asset(
+                    'assets/images/logo.png',
+                    width: 48.r,
+                    height: 48.r,
+                    fit: BoxFit.contain,
+                  ),
                 ),
               ),
               SizedBox(width: 14.w),
@@ -150,13 +153,16 @@ class DashboardScreen extends StatelessWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(5.r),
-                child: Image.asset(
-                  'assets/images/logo.png',
-                  width: 40.r,
-                  height: 40.r,
-                  fit: BoxFit.contain,
+              Hero(
+                tag: 'app_logo',
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(5.r),
+                  child: Image.asset(
+                    'assets/images/logo.png',
+                    width: 40.r,
+                    height: 40.r,
+                    fit: BoxFit.contain,
+                  ),
                 ),
               ),
               SizedBox(width: 12.w),

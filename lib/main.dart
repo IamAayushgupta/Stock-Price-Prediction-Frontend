@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'controllers/stock_controller.dart';
-import 'screens/dashboard_screen.dart';
+import 'screens/startup_screen.dart';
 import 'theme/app_theme.dart';
 
 void main() {
@@ -26,7 +26,7 @@ class StockPredictionApp extends StatelessWidget {
           title: 'Stock Prediction Dashboard',
           theme: AppTheme.darkTheme,
           debugShowCheckedModeBanner: false,
-          home: const DashboardScreen(),
+          home: const StartupScreen(),
         );
       },
     );
